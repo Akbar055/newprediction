@@ -16,7 +16,7 @@ import streamlit as st
 import pickle
 
 # Load the diabetes model from the pickle file
-diabetes_model =diabetes_model = pickle.load(open(r"C:\Users\HOME\OneDrive\Desktop\webapplive\model.pkl", "rb"), encoding="utf-8")
+diabetes_model =diabetes_model = pickle.load(open("model.pkl", "rb"), encoding="utf-8")
 # Create a sidebar with the option menu
 with st.sidebar:
     selected = st.selectbox('Diabetes Prediction System',
